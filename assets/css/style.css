@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --header-yuxari-reng: #0a111f;
+    --header-asagi-reng: #0b121f;
+    --header-btn-rengi: #3a68b8;
+    --hero-yuxari-reng: #08101d;
+    --hero-asagi-reng: #09111E;
+}
+
+* {
+    text-decoration: none;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+header {
+    background:linear-gradient(to bottom,var(--header-yuxari-reng),var(--header-asagi-reng));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav a {
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+    
+}
+
+header button {
+    background-color: var(--header-btn-rengi);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: transparent;
+    display: none;
+}
+
+header nav {
+    display: none;
+}
+
+header i {
+    color: #fff;
+    font-size: 22px;
+}
+/* Header end */
+
+/* Hero start*/
+.hero-section {
+    background:linear-gradient(to bottom,var(--hero-yuxari-reng),var(--hero-asagi-reng));
+    color: #fff;
+    padding: 40px 0px;
+}
+
+
+.hero .hero-left h6 {
+    text-transform: uppercase;
+    color: #3a68b8
+}
+
+.hero .hero-left h2 {
+    font-size: 30px;
+    margin: 20px 0px 40px;
+    font-weight: 700;
+    
+}
+
+.hero .hero-left p {
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, .7);
+    line-height: 25.6px;
+    
+}
+
+.hero .buttonlar button {
+    background-color: var(--header-btn-rengi);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.hero .buttonlar button img {
+    width: 11px;
+    margin-right: 10px;
+    
+}
+
+
+/* Hero end*/
+
+/* Companies start */
+.companies {
+    background-color: #09111e;
+}
+
+.companies img {
+    height: 60px;
+    margin: 10px 0px;
+}
+/* Companies end */
+
+/* Ai start */
+.ai {
+    background-color: #020a18;
+    color: #fff;
+    padding: 50px 0px;
+}
+.ai .ai-right-side h1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.ai .ai-right-side article {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, .7);
+    line-height: 25.6px;
+}
+
+.ai .ai-right-side button {
+    background-color: var(--header-btn-rengi);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Ai end */
+
+/* Clients Start */
+.clients {
+    background-color: #020a18;
+    color: #fff;
+    padding: 50px 0px;
+}
+.clients .clients-left-side h1 {
+    font-size: 30px;
+    font-weight: 700
+}
+.clients .clients-left-side p {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, .7);
+    line-height: 25.6px;
+    font-size: 16px;
+}
+/* Clients End */
+
+@media(min-width:768px) {
+    header i {
+        display: none !important;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header nav a {
+        margin-right: 20px;
+    }
+
+    header img {
+        width: 245px;
+    }
+
+    header button {
+        display: flex;
+    }
+    
+/* Header end */
+
+
+    .clients .clients-right-side img {
+    padding: 100px 0px;
+    }
+    .clients .clients-left-side p {
+    font-size: 14px;
+    line-height: 16px;
+    }
+    
+
+}
+
+@media(min-width:992px) {
+   .hero-left h2 {
+    font-size: 46px !important;
+   }
+   .hero-left {
+    padding: 160px 0px;
+   }
+
+   .hero-right {
+    padding: 40px 0px;
+   }
+/* hero end */
+
+   .ai .ai-right-side {
+    padding: 150px 0px;
+   }
+
+   .ai-right-side h1 , .clients-left-side h1 {
+    font-size: 40px !important;
+   }
+
+   .ai , .clients {
+    padding: 70px 0px !important;
+   }
+   .clients .clients-left-side p {
+    font-size: 17px;
+ }
+   .clients .clients-left-side {
+    padding: 160px 0px;
+   }
+}
+
+@media(max-width:320px){
+    header img {
+        width: 200px;
+    }
+
+    .hero .buttonlar button {
+        padding: 7px 19px;
+    }
+    .clients .clients-left-side p {
+        font-size: 13px;
+     }
+
+
+}
